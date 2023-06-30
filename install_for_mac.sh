@@ -6,11 +6,9 @@ WEB_CRAWLER_REPO_URL="https://github.com/inoasasyn/Jakwywioze_web_crawler.git"
 
 git clone $FRONTEND_REPO_URL frontend
 git clone $BACKEND_REPO_URL backend
-git clone $WEB_CRAWLER_REPO_URL web-crawlers
+git clone $WEB_CRAWLER_REPO_URL web-crawler
 
-cd frontend || exit
-npm install
+npm --prefix frontend install
 
-cd ../backend || exit
-mvn clean install
+mvn -f backend/pom.xml clean install
 
