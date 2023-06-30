@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a5ab336-5626-4261-bfb9-62a5a866ec9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/install_windows.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install_for_mac.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install_for_mac.sh" afterDir="false" />
+    <list default="true" id="7a5ab336-5626-4261-bfb9-62a5a866ec9c" name="Changes" comment="add windows script and additions to mac script">
+      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install_for_mac.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install_mac.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +52,21 @@
       <updated>1688046622846</updated>
       <workItem from="1688046624349" duration="1306000" />
     </task>
+    <task id="LOCAL-00001" summary="add windows script and additions to mac script">
+      <created>1688133608587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688133608587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add windows script and additions to mac script" />
+    <option name="LAST_COMMIT_MESSAGE" value="add windows script and additions to mac script" />
   </component>
 </project>
