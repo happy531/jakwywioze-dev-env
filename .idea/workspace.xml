@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a5ab336-5626-4261-bfb9-62a5a866ec9c" name="Changes" comment="[JAK-68] docerize frontend">
-      <change afterPath="$PROJECT_DIR$/web-crawlers/.gitmodules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7a5ab336-5626-4261-bfb9-62a5a866ec9c" name="Changes" comment="[JAK-68]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688046622846</updated>
       <workItem from="1688046624349" duration="1306000" />
-      <workItem from="1688157158077" duration="109000" />
+      <workItem from="1688157158077" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="add windows script and additions to mac script">
       <created>1688133608587</created>
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688148211457</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[JAK-68]">
+      <created>1688157280944</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688157280944</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,8 +106,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add windows script and additions to mac script" />
-    <MESSAGE value="[JAK-68]" />
     <MESSAGE value="[JAK-68] docerize frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="[JAK-68] docerize frontend" />
+    <MESSAGE value="[JAK-68]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[JAK-68]" />
   </component>
 </project>
