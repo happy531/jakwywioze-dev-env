@@ -1,0 +1,3 @@
+[submodule "web-crawlers"]
+    path = web-crawlers
+    url = https://github.com/inoasasyn/Jakwywioze_web_crawler.git

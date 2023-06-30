@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5ab336-5626-4261-bfb9-62a5a866ec9c" name="Changes" comment="[JAK-68] docerize frontend">
-      <change afterPath="$PROJECT_DIR$/backend/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-crawler/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-crawler/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-crawlers/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/web-crawler" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,6 +38,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -51,7 +48,7 @@
       <recent name="$PROJECT_DIR$/web-crawler" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.run-application">
+  <component name="RunManager">
     <configuration name="run-application" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -64,11 +61,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Docker.run postgres image" />
-      <item itemvalue="Docker.run-application" />
-      <item itemvalue="Spring Boot.run backend" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688046622846</updated>
       <workItem from="1688046624349" duration="1306000" />
+      <workItem from="1688157158077" duration="109000" />
     </task>
     <task id="LOCAL-00001" summary="add windows script and additions to mac script">
       <created>1688133608587</created>
