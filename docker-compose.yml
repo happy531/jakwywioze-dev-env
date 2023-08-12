@@ -14,7 +14,7 @@ services:
   backend:
     container_name: 'spring-boot-backend'
     build:
-      context: ./backend
+      context: ../jakwywioze-backend
     ports:
       - '8081:8081'
     environment:
@@ -27,7 +27,7 @@ services:
   frontend:
     container_name: 'vue-frontend'
     build:
-      context: ./frontend
+      context: ../jakwywioze-frontend
     ports:
       - '8080:8080'
     depends_on:
