@@ -26,14 +26,14 @@ services:
       - BASE_FRONTEND_URL=https://www.jakwywioze.pl
       - EMAIL=jakwywioze@gmail.com
       - PASSWORD=mfuunbwozssnuesp
-      - GEOCODING_API_KEY=
+      - GEOCODING_API_KEY=a2607e4c82msh88880a6336d640dp1550d2jsnf33de9ef2c6c
       - SERVER_PORT=8443
       - SERVER_SSL_ENABLED=true
       - SERVER_SSL_KEY_STORE=/certs/keystore.p12
       - SERVER_SSL_KEY_STORE_PASSWORD=jakwywioze-keystore-password
       - SERVER_SSL_KEY_ALIAS=1
     volumes:
-      - ./keystore.p12:/certs/keystore.p12
+      - /etc/letsencrypt/live/www.jakwywioze.pl/keystore.p12:/certs/keystore.p12
     depends_on:
       - db
   frontend:
@@ -42,6 +42,7 @@ services:
       context: ../jakwywioze-frontend
     environment:
       - VUE_APP_BACKEND_URL=https://jakwywioze.pl:8443
+      - VUE_APP_WEBSOCKET_URL=wss://www.jakwywioze.pl/ws
     ports:
       - '3000:3000'
     depends_on:
