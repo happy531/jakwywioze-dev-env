@@ -24,9 +24,10 @@ services:
       - SPRING_DATASOURCE_PASSWORD=jakwywioze
       - SPRING_SESSION_JDBC_INITIALIZE_SCHEMA=always
       - BASE_FRONTEND_URL=https://www.jakwywioze.pl
+      - BASE_FRONTEND_SHORT_URL=https://jakwywioze.pl
       - EMAIL=jakwywioze@gmail.com
       - PASSWORD=mfuunbwozssnuesp
-      - GEOCODING_API_KEY=a2607e4c82msh88880a6336d640dp1550d2jsnf33de9ef2c6c
+      - GEOCODING_API_KEY=geocoding_api_key
       - SERVER_PORT=8443
       - SERVER_SSL_ENABLED=true
       - SERVER_SSL_KEY_STORE=/certs/keystore.p12

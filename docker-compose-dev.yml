@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  db:
+    container_name: 'postgres'
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=jakwywioze
+      - POSTGRES_PASSWORD=jakwywioze
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+  backend:
+    container_name: 'spring-boot'
+    build:
+      context: ../jakwywioze-backend
+    ports:
+      - '8081:8081'
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/jakwywioze
+      - SPRING_DATASOURCE_USERNAME=jakwywioze
+      - SPRING_DATASOURCE_PASSWORD=jakwywioze
+      - SPRING_SESSION_JDBC_INITIALIZE_SCHEMA=always
+      - BASE_FRONTEND_URL=http://localhost:3000
+      - EMAIL=jakwywioze@gmail.com
+      - PASSWORD=mfuunbwozssnuesp
+      - GEOCODING_API_KEY=geocoding_api_key
+      - SERVER_PORT=8081
+    depends_on:
+      - db
+  frontend:
+    container_name: 'vue'
+    build:
+      context: ../jakwywioze-frontend
+    environment:
+      - VUE_APP_BACKEND_URL=http://localhost:3000
+      - VUE_APP_WEBSOCKET_URL=ws://localhost:3000/ws
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+volumes:
+  db:
+    driver: local
