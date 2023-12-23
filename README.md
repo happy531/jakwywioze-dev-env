@@ -28,8 +28,9 @@ Następnie w `docker-compose-dev.yml` i `docker-compose-prod.yml`
 ```text
 - GEOCODING_API_KEY=twoj_klucz_api
 ```
-### Konto Gmail
-Do modułu rejestracji wymagane jest konto Gmail, z którego będą przychodzić linki z potwierdzeniem konta i resetem hasła.
+### Serwer Mailowy
+Do modułu rejestracji wymagany jest serwer mailowy, który będzie odpowiadał za wysyłanie maili z potwierdzeniem konta i resetem hasła.
+Przykład z serwerem Gmail:
 [Gmail - konto](https://support.google.com/mail/answer/56256?hl=en)
 
 Następnie w `docker-compose-dev.yml` i `docker-compose-prod.yml`
