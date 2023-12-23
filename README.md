@@ -77,6 +77,9 @@ które definiują nazwę użytkownika i hasło do bazy danych. Dane są przechow
 
 ### Backend
 Usługa backend to aplikacja `Spring Boot` uruchamiana w kontenerze Docker. Aplikacja komunikuje się z bazą danych PostgreSQL za pośrednictwem JDBC. 
+Aplikacja stosuje technologię ORM oraz standard JPA. Do implementacji tej technologii użyty został pakiet `Jakarta.persistance` z frameworku `Spring`.
+Uwierzytelnianie i autoryzacja zaimplementowane zostały za pomocą `Spring Secuirty`, a hasła szyfrowane są za pomocą algorytmu BCrypt. 
+Serwer mailowy wykorzystuje SMTP dostarczany przez platformę Gmail.
 Kontener jest konfigurowany za pomocą zmiennych środowiskowych, które definiują szczegóły połączenia z bazą danych, ustawienia sesji, adresy URL frontendu, dane do wysyłania e-maili, 
 klucz API do geokodowania i ustawienia SSL.
 
@@ -85,7 +88,7 @@ Usługa frontend to aplikacja `Vue` + `TypeScript` uruchamiana w kontenerze Dock
 Kontener jest konfigurowany za pomocą zmiennych środowiskowych, które definiują adresy URL backendu.
 
 ### Reversed proxy
-Serwer `nginx` uruchamiany w kontenerze Docker. Serwer reversed proxy jest konfigurowany za pomocą pliku konfiguracyjnego `deafult.conf` i certyfikatów `SSL`, które są montowane jako woluminy. 
+Serwer `nginx` uruchamiany w kontenerze Docker. Serwer reversed proxy jest konfigurowany za pomocą pliku konfiguracyjnego `default.conf` i certyfikatów `SSL`, które są montowane jako woluminy. 
 
 ### Web-crawler
 Do zbierania danych wykorzystane zostały web-crawlery napisane w języku `Python`. Więcej o module pozyskiwania danych [tutaj](https://github.com/inoasasyn/Jakwywioze_web_crawler)
