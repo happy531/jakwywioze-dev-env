@@ -40,7 +40,7 @@ Następnie w `docker-compose-dev.yml` i `docker-compose-prod.yml`
 
 ## Uruchamianie lokalnego środowiska
 ```console
-docker-compose -f docker-compose-prod.yml build --no-cache && docker-compose -f docker-compose-prod.yml up -d
+docker-compose -f docker-compose-dev.yml build --no-cache && docker-compose -f docker-compose-dev.yml up -d
 ```
 
 ## Uruchamianie środowiska cloudowego
@@ -86,6 +86,9 @@ Kontener jest konfigurowany za pomocą zmiennych środowiskowych, które definiu
 
 ### Reversed proxy
 Serwer `nginx` uruchamiany w kontenerze Docker. Serwer reversed proxy jest konfigurowany za pomocą pliku konfiguracyjnego `deafult.conf` i certyfikatów `SSL`, które są montowane jako woluminy. 
+
+### Web-crawler
+Do zbierania danych wykorzystane zostały web-crawlery napisane w języku `Python`. Więcej o module pozyskiwania danych [tutaj](https://github.com/inoasasyn/Jakwywioze_web_crawler)
 
 ### Wdrożenie
 System jest wdrażany na platformie Digital Ocean. Każda z usług jest uruchamiana jako oddzielny kontener Docker, co umożliwia łatwe skalowanie i zarządzanie systemem. 
