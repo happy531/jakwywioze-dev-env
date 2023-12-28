@@ -87,6 +87,7 @@ klucz API do geokodowania i ustawienia SSL.
 ### Frontend
 Usługa frontend to aplikacja `Vue` + `TypeScript` uruchamiana w kontenerze Docker. Jako store używany jest tutaj `Pina.js`. Aplikacja komunikuje się z backendem za pośrednictwem HTTPS. 
 Kontener jest konfigurowany za pomocą zmiennych środowiskowych, które definiują adresy URL backendu.
+Więcej na temat architektury Frontendu [tutaj](https://github.com/szymonbartanowicz/jakwywioze-frontend)
 
 ### Reversed proxy
 Serwer `nginx` uruchamiany w kontenerze Docker. Serwer reversed proxy jest konfigurowany za pomocą pliku konfiguracyjnego `default.conf` i certyfikatów `SSL`, które są montowane jako woluminy. 
